@@ -26,7 +26,7 @@ def monitorFileSystem(mountInput):
                 individualFile[fileAbsolutePath] = fileSize
                 fileList.append(individualFile)
             else:
-                print("Invalid file contents. Less than 2 elements in splitList")
+                print("Invalid file data found and skipped filename: %s" % File)
     fileSystemDict["files"] = fileList
     return fileSystemDict
 
